@@ -23,7 +23,4 @@ app.use(handleMongooseError)
 app.use(handleDatabaseError)
 app.use(handleDefaultError)
 
-// serve build of frontend in express
-app.use('/', express.static(path.join(__dirname, '../client/public')))
-
 export default app
