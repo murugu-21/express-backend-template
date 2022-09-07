@@ -21,7 +21,7 @@ const userSchema = new Schema<User>({
     },
     type: {
         type: String,
-        enum: ['Customer', 'Admin'],
+        enum: ['Customer', 'Distributor', 'Operator'],
     },
 })
 

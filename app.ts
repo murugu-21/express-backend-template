@@ -7,8 +7,6 @@ import {
     handleValidationError,
 } from './middleware/errorHandler.middleware'
 import loginRouter from './routes/api/auth.route'
-import flightRouter from './routes/api/flight.route'
-import ticketRouter from './routes/api/ticket.route'
 import userRouter from './routes/api/user.route'
 const app: Express = express()
 
@@ -18,8 +16,6 @@ app.use(json())
 // Define Routes
 app.use('/api/user', userRouter)
 app.use('/api/auth', loginRouter)
-app.use('/api/flight', flightRouter)
-app.use('/api/ticket', ticketRouter)
 
 // error handlers
 app.use(handleValidationError)
